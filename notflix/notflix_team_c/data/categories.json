@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "id": "cat001",
+      "name": "Trending Now",
+      "slug": "trending",
+      "display_order": 1,
+      "filter_key": "is_trending",
+      "filter_value": true,
+      "icon": "trending_up"
+    },
+    {
+      "id": "cat002",
+      "name": "New Releases",
+      "slug": "new-releases",
+      "display_order": 2,
+      "filter_key": "is_new_release",
+      "filter_value": true,
+      "icon": "new_releases"
+    },
+    {
+      "id": "cat003",
+      "name": "Netflix Originals",
+      "slug": "originals",
+      "display_order": 3,
+      "filter_key": "is_netflix_original",
+      "filter_value": true,
+      "icon": "star"
+    },
+    {
+      "id": "cat004",
+      "name": "Top Rated",
+      "slug": "top-rated",
+      "display_order": 4,
+      "filter_key": "user_rating",
+      "filter_value": ">=4.5",
+      "icon": "thumb_up"
+    },
+    {
+      "id": "cat005",
+      "name": "Kids & Family",
+      "slug": "kids-family",
+      "display_order": 5,
+      "filter_key": "is_child_safe",
+      "filter_value": true,
+      "icon": "child_care"
+    },
+    {
+      "id": "cat006",
+      "name": "Award Winners",
+      "slug": "award-winners",
+      "display_order": 6,
+      "filter_key": "awards",
+      "filter_value": "not_empty",
+      "icon": "emoji_events"
+    }
+  ],
+  "genres": [
+    { "id": "g001", "name": "Action", "slug": "action" },
+    { "id": "g002", "name": "Adventure", "slug": "adventure" },
+    { "id": "g003", "name": "Comedy", "slug": "comedy" },
+    { "id": "g004", "name": "Crime", "slug": "crime" },
+    { "id": "g005", "name": "Documentary", "slug": "documentary" },
+    { "id": "g006", "name": "Drama", "slug": "drama" },
+    { "id": "g007", "name": "Family", "slug": "family" },
+    { "id": "g008", "name": "Fantasy", "slug": "fantasy" },
+    { "id": "g009", "name": "Historical", "slug": "historical" },
+    { "id": "g010", "name": "Horror", "slug": "horror" },
+    { "id": "g011", "name": "Mystery", "slug": "mystery" },
+    { "id": "g012", "name": "Nature", "slug": "nature" },
+    { "id": "g013", "name": "Reality", "slug": "reality" },
+    { "id": "g014", "name": "Romance", "slug": "romance" },
+    { "id": "g015", "name": "Sci-Fi", "slug": "sci-fi" },
+    { "id": "g016", "name": "Thriller", "slug": "thriller" },
+    { "id": "g017", "name": "War", "slug": "war" },
+    { "id": "g018", "name": "Competition", "slug": "competition" }
+  ],
+  "maturity_ratings": [
+    { "code": "TV-G", "name": "General Audience", "description": "Suitable for all ages", "min_age": 0 },
+    { "code": "TV-PG", "name": "Parental Guidance", "description": "May not be suitable for younger children", "min_age": 7 },
+    { "code": "TV-14", "name": "Parents Strongly Cautioned", "description": "May be unsuitable for children under 14", "min_age": 14 },
+    { "code": "TV-MA", "name": "Mature Audience", "description": "For mature audiences only", "min_age": 17 },
+    { "code": "PG", "name": "Parental Guidance Suggested", "description": "Some material may not be suitable for children", "min_age": 7 },
+    { "code": "PG-13", "name": "Parents Strongly Cautioned", "description": "Some material may be inappropriate for children under 13", "min_age": 13 },
+    { "code": "R", "name": "Restricted", "description": "Under 17 requires accompanying parent or adult guardian", "min_age": 17 }
+  ],
+  "subscription_tiers": [
+    { "id": "basic", "name": "Basic", "price": 9.99, "max_screens": 1, "hd_available": false, "uhd_available": false },
+    { "id": "standard", "name": "Standard", "price": 14.99, "max_screens": 2, "hd_available": true, "uhd_available": false },
+    { "id": "premium", "name": "Premium", "price": 19.99, "max_screens": 4, "hd_available": true, "uhd_available": true }
+  ],
+  "languages": [
+    { "code": "en", "name": "English" },
+    { "code": "es", "name": "Spanish" },
+    { "code": "fr", "name": "French" },
+    { "code": "de", "name": "German" },
+    { "code": "it", "name": "Italian" },
+    { "code": "pt", "name": "Portuguese" },
+    { "code": "ja", "name": "Japanese" },
+    { "code": "ko", "name": "Korean" },
+    { "code": "zh", "name": "Mandarin" },
+    { "code": "hi", "name": "Hindi" },
+    { "code": "ar", "name": "Arabic" },
+    { "code": "nl", "name": "Dutch" }
+  ]
+}

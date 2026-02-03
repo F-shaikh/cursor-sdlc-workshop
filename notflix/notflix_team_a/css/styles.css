@@ -1,0 +1,33 @@
+/* NOTFLIX - The World's Ugliest Streaming Site */
+/* TODO: Make this not terrible */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: gray;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* That's it. That's the whole stylesheet. */
+/* Feel free to make this look like an actual streaming service. */

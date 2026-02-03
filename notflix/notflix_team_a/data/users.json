@@ -1,0 +1,171 @@
+{
+  "users": [
+    {
+      "id": "u001",
+      "email": "demo@notflix.com",
+      "password_hash": "demo123_hashed",
+      "account_created": "2022-01-15",
+      "subscription_tier": "premium",
+      "subscription_price": 19.99,
+      "billing_date": 15,
+      "payment_method": "visa_4242",
+      "profiles": [
+        {
+          "id": "p001",
+          "name": "Alex",
+          "avatar": "avatar_red.png",
+          "is_kids_profile": false,
+          "maturity_setting": "all",
+          "language_preference": "en",
+          "autoplay_enabled": true,
+          "preferred_genres": ["sci-fi", "thriller", "action"],
+          "watch_history": [
+            {
+              "content_id": "m001",
+              "content_type": "movie",
+              "watched_date": "2024-01-15",
+              "watch_duration_minutes": 142,
+              "completed": true,
+              "rating_given": 5
+            },
+            {
+              "content_id": "tv002",
+              "content_type": "tv_show",
+              "watched_date": "2024-01-20",
+              "season": 4,
+              "episode": 3,
+              "watch_duration_minutes": 45,
+              "completed": false,
+              "rating_given": null
+            },
+            {
+              "content_id": "m005",
+              "content_type": "movie",
+              "watched_date": "2024-01-18",
+              "watch_duration_minutes": 134,
+              "completed": true,
+              "rating_given": 4
+            }
+          ],
+          "continue_watching": [
+            {
+              "content_id": "tv002",
+              "content_type": "tv_show",
+              "season": 4,
+              "episode": 3,
+              "progress_percent": 65,
+              "time_remaining_minutes": 21
+            },
+            {
+              "content_id": "m012",
+              "content_type": "movie",
+              "progress_percent": 30,
+              "time_remaining_minutes": 106
+            }
+          ],
+          "my_list": ["m002", "m008", "tv001", "tv005", "m014"],
+          "liked_content": ["m001", "m003", "tv002", "tv010"],
+          "disliked_content": ["m010"]
+        },
+        {
+          "id": "p002",
+          "name": "Jordan",
+          "avatar": "avatar_blue.png",
+          "is_kids_profile": false,
+          "maturity_setting": "all",
+          "language_preference": "en",
+          "autoplay_enabled": false,
+          "preferred_genres": ["romance", "comedy", "drama"],
+          "watch_history": [
+            {
+              "content_id": "m007",
+              "content_type": "movie",
+              "watched_date": "2024-01-22",
+              "watch_duration_minutes": 112,
+              "completed": true,
+              "rating_given": 5
+            },
+            {
+              "content_id": "tv008",
+              "content_type": "tv_show",
+              "watched_date": "2024-01-21",
+              "season": 2,
+              "episode": 5,
+              "watch_duration_minutes": 55,
+              "completed": true,
+              "rating_given": 4
+            }
+          ],
+          "continue_watching": [
+            {
+              "content_id": "tv008",
+              "content_type": "tv_show",
+              "season": 2,
+              "episode": 6,
+              "progress_percent": 0,
+              "time_remaining_minutes": 55
+            }
+          ],
+          "my_list": ["m004", "m007", "m013", "tv008"],
+          "liked_content": ["m007", "tv008", "m004"],
+          "disliked_content": ["m005", "m006"]
+        },
+        {
+          "id": "p003",
+          "name": "Kids",
+          "avatar": "avatar_kids.png",
+          "is_kids_profile": true,
+          "maturity_setting": "kids",
+          "language_preference": "en",
+          "autoplay_enabled": true,
+          "preferred_genres": ["family", "animation", "comedy"],
+          "watch_history": [
+            {
+              "content_id": "m010",
+              "content_type": "movie",
+              "watched_date": "2024-01-20",
+              "watch_duration_minutes": 98,
+              "completed": true,
+              "rating_given": null
+            },
+            {
+              "content_id": "tv009",
+              "content_type": "tv_show",
+              "watched_date": "2024-01-19",
+              "season": 2,
+              "episode": 8,
+              "watch_duration_minutes": 40,
+              "completed": true,
+              "rating_given": null
+            }
+          ],
+          "continue_watching": [
+            {
+              "content_id": "tv012",
+              "content_type": "tv_show",
+              "season": 3,
+              "episode": 5,
+              "progress_percent": 50,
+              "time_remaining_minutes": 15
+            }
+          ],
+          "my_list": ["m008", "m010", "tv009", "tv012"],
+          "liked_content": ["m010", "tv009"],
+          "disliked_content": []
+        }
+      ]
+    }
+  ],
+  "guest_user": {
+    "id": "guest",
+    "name": "Guest",
+    "avatar": "avatar_default.png",
+    "is_kids_profile": false,
+    "maturity_setting": "all",
+    "watch_history": [],
+    "continue_watching": [],
+    "my_list": [],
+    "liked_content": [],
+    "disliked_content": []
+  }
+}
