@@ -68,13 +68,17 @@ The Figma file has frames like:
 
 Each frame contains **text annotations** from the designer describing what that section should do.
 
-### Step 4: Generate a PRD from the Figma design
+### Step 4: Generate a PRD and write it to Notion
 
-Have Cursor turn the Figma breakdown into a project plan:
+Have Cursor turn the Figma breakdown into a project plan — and publish it to Notion so the whole team can see it:
 
-> **Ask Cursor:** "Based on the Figma design breakdown, create a `prd.md` for our team. Each Figma frame (and sub-frame) should be a separate task. Make sure the tasks are small enough that each person can do one as a PR under 500 lines. We have [X] people on our team."
+> **Ask Cursor:** "Based on the Figma design breakdown, use the Notion MCP to create a page titled **'[SDLC Workshop] Team [X] — LinkedOut PRD'**. Each Figma frame (and sub-frame) should be a separate task. For each task, add a heading with the assignee's GitHub username, a description of what to build, and which components/files to touch. Make sure the tasks are small enough that each person can do one as a PR under 500 lines. We have [X] people on our team."
 
-This creates your team's roadmap — each person picks a task and works on it independently.
+Also save a local copy:
+
+> **Ask Cursor:** "Also save this PRD as `prd.md` in our team folder."
+
+Now your team has a **real Notion doc** everyone can reference, plus a local copy in the repo. This is the same workflow from Section 2 — you already learned how to use the Notion MCP to write PRDs!
 
 ### Step 5: Run the app
 

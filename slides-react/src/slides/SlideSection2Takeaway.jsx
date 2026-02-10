@@ -23,12 +23,11 @@ const SlideSection2Takeaway = () => (
             You understood a stranger's code in minutes
           </span>
         </div>
-        <div className="tile-desc">
-          That feeling when you opened someone else's project and had no idea
-          what was going on? Ask Mode got you past it in minutes. For real
-          engineers, that confusion usually lasts weeks. This is what faster
-          onboarding actually looks like.
-        </div>
+        <ul className="tile-bullets">
+          <li>Opened someone else's project with zero context</li>
+          <li>Ask Mode got you oriented in minutes, not weeks</li>
+          <li>This is what faster onboarding actually looks like</li>
+        </ul>
       </div>
       <div className="tile orange">
         <div className="takeaway-label" style={{ color: 'var(--orange)' }}>
@@ -39,12 +38,12 @@ const SlideSection2Takeaway = () => (
             Skills, Hooks, Bugbot, and MCPs were working behind the scenes
           </span>
         </div>
-        <div className="tile-desc">
-          Git explained in plain English? A Skill. Blocked from committing
-          without a team file? A Hook. PRD written straight to Notion without
-          leaving Cursor? That's an MCP — a live connection to external tools.
-          Someone configured all of this before you walked in.
-        </div>
+        <ul className="tile-bullets">
+          <li><strong>Skill:</strong> Git explained in plain English</li>
+          <li><strong>Hook:</strong> Blocked commits without a team file</li>
+          <li><strong>MCP:</strong> PRD written straight to Notion from Cursor</li>
+          <li>Someone configured all of this before you walked in</li>
+        </ul>
       </div>
       <div className="tile orange">
         <div className="takeaway-label" style={{ color: 'var(--orange)' }}>
@@ -55,11 +54,11 @@ const SlideSection2Takeaway = () => (
             In Section 1 you used AI. In Section 2 you taught it.
           </span>
         </div>
-        <div className="tile-desc">
-          You created a Rule, a Skill, and a Hook — your own guardrails.
-          That's how senior engineers' knowledge sticks around even when
-          they're not in the room. The AI carries the standards forward.
-        </div>
+        <ul className="tile-bullets">
+          <li>Created a Rule, a Skill, and a Hook — your own guardrails</li>
+          <li>Senior engineers' knowledge stays even when they leave</li>
+          <li>The AI carries the standards forward automatically</li>
+        </ul>
       </div>
     </div>
     <div className="emphasis-box orange">
