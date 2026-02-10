@@ -40,11 +40,19 @@ else
   echo "✅ GitHub CLI (gh) already installed"
 fi
 
-# 4. Install Cursor CLI
+# 4. Install Node.js (includes npm) if not present
+if ! command -v node &>/dev/null; then
+  echo "📦 Installing Node.js..."
+  brew install node
+else
+  echo "✅ Node.js already installed ($(node -v))"
+fi
+
+# 5. Install Cursor CLI
 echo "📦 Installing Cursor CLI..."
 curl -sSf https://cursor.com/install | bash
 
-# 5. Ensure ~/.local/bin is in PATH
+# 6. Ensure ~/.local/bin is in PATH
 grep -q '.local/bin' ~/.zshrc 2>/dev/null || echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 export PATH="$HOME/.local/bin:$PATH"
 

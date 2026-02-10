@@ -20,14 +20,28 @@
 - Your MVP should be buildable in **10 minutes** by one person
 - Think "proof of concept" not "production ready"
 - If it sounds ambitious, make it simpler
+- **Use Cursor to help you plan this!** You need a project that has at least 5 features so everyone on your team can pick one and add it
+- Feel free to take one of the ideas below — this exercise is about learning the git flow, collaborating as a team, and understanding where Cursor's features fit into the SDLC
 
 ### Good Project Ideas
-- A simple Chrome extension (e.g., changes page colors, adds a button)
-- A single-page web app (e.g., a counter, a todo list, a timer)
-- A typing-speed game that measures your words per minute
+
+**Pong** — classic paddle-and-ball game
+- _Example features:_ scoreboard, sound effects, difficulty/speed settings
+
+**Memory Card Match** — flip cards to find matching pairs
+- _Example features:_ move counter, timer, win animation/confetti
+
+**Drawing Pad** — simple canvas you can sketch on
+- _Example features:_ color picker, brush size slider, eraser tool
+
+**Typing Speed Game** — type a passage and measure your words per minute
+- _Example features:_ WPM display, accuracy tracker, difficulty levels
+
+**Trivia Quiz** — multiple choice questions with score tracking
+- _Example features:_ timer per question, category selector, results summary screen
 
 ### Bad Project Ideas (Too Big!)
-- Anything with a database
+- Anything with a database -- tell cursor to avoid this
 - Anything requiring authentication
 - Anything with multiple pages/screens
 - Anything that "needs" an API
