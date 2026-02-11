@@ -6,9 +6,9 @@
 
 ## Project Overview
 
-**Project Name:** Call Calm
+**Project Name:** Calm Call
 
-**One-line Description:** A simple web app that guides account executives through breathing exercises before or during stressful sales calls.
+**One-line Description:** A quick breathing exercise app to help sales reps regain composure after a tough call.
 
 **Type:** Web App (single page)
 
@@ -54,11 +54,11 @@
 
 | Name | Task | Description |
 |------|------|-------------|
-| Parker | Phase label | Text showing "Breathe in" / "Hold" / "Breathe out" for current step |
-| Jesse | Breathing circle animation | Visual circle that grows on inhale and shrinks on exhale |
-| Brookey | Duration presets | Buttons to choose 1 min, 3 min, or 5 min session length |
-| Krista | Calm color theme | Soothing color palette (e.g. soft blue/green) for the app |
-| Pete | Encouraging messages | Short calm phrase shown between cycles ("You've got this", etc.) |
+| Brookey | Breathing pattern selector | Add dropdown/buttons to choose 4-4-4, 4-7-8, or box breathing |
+| Pete | Calming theme | Soft gradient background with relaxing colors |
+| Jesse | Cycle counter | Show "Breath 3 of 5" and total breaths completed |
+| Parker | Visual breathing guide | Animated circle that expands (inhale) and contracts (exhale) |
+| Krista | Duration presets | Quick (30s), Standard (1 min), Deep reset (2 min) buttons |
 
 ### Task Guidelines
 - Each task should add something **visible** to the project
@@ -73,17 +73,18 @@
 > **One person** creates the foundation that everyone else builds on.
 
 **What the MVP includes:**
-- Single page with one breathing cycle: Inhale (4s) → Hold (4s) → Exhale (4s)
-- A Start button that runs the cycle once
-- Simple countdown or step indicator (e.g. "4, 3, 2, 1" per phase)
-- Minimal styling so the page runs and the cycle is visible
+- Single page with a simple breathing exercise
+- One default pattern: 4-4-4 (inhale 4 sec, hold 4 sec, exhale 4 sec)
+- Text cues: "Breathe in" / "Hold" / "Breathe out" that cycle on screen
+- Start and Stop buttons
+- Basic timer/cycle logic (no fancy animation required — a pulsing circle or simple visual is enough)
 
 **What it does NOT include:**
-- Phase label text (Parker)
-- Animated breathing circle (Jesse)
-- Duration presets 1/3/5 min (Brookey)
-- Calm color theme (Krista)
-- Encouraging messages between cycles (Pete)
+- Pattern options (4-7-8, box breathing) — Feature 1
+- Calming background/theme — Feature 2
+- Cycle counter display — Feature 3
+- Animated breathing circle (expand/contract) — Feature 4
+- Duration preset buttons (30s, 1 min, 2 min) — Feature 5
 
 ---
 
@@ -91,30 +92,30 @@
 
 > These are the features team members will add. Design them to be **independent** so people can work in parallel.
 
-### Feature 1: Phase label
-- **Assigned to:** Parker
-- **Description:** Display clear text for the current phase: "Breathe in", "Hold", or "Breathe out" (and optionally the countdown number).
-- **Files to modify/create:** Main app/component that renders the cycle; add or update the element that shows phase text.
-
-### Feature 2: Breathing circle animation
-- **Assigned to:** Jesse
-- **Description:** A circle (or shape) that smoothly grows during inhale and shrinks during exhale, synced to the timer.
-- **Files to modify/create:** Add a visual component (e.g. div/canvas/SVG) and CSS or JS animation tied to the current phase and countdown.
-
-### Feature 3: Duration presets
+### Feature 1: Breathing Pattern Selector
 - **Assigned to:** Brookey
-- **Description:** Buttons or controls to choose session length: 1 min, 3 min, or 5 min (number of cycles computed from cycle length).
-- **Files to modify/create:** UI for preset selection; wire selection into the timer/session logic so the app stops after the chosen duration.
+- **Description:** Add a dropdown or button group to choose between 4-4-4 (default), 4-7-8, and box breathing. Each pattern has different inhale/hold/exhale timings.
+- **Files to modify/create:** `App.jsx` or `BreathingExercise.jsx`, add a `patterns` config object and selector UI
 
-### Feature 4: Calm color theme
-- **Assigned to:** Krista
-- **Description:** Apply a soothing color palette (e.g. soft blue, green, or neutral) to background, text, and key elements so the app feels calm during a call.
-- **Files to modify/create:** CSS/theme file or style section; update class names or variables used by the main layout and components.
-
-### Feature 5: Encouraging messages
+### Feature 2: Calming Theme
 - **Assigned to:** Pete
-- **Description:** Between cycles (or at the start of each new cycle), show a short encouraging phrase from a fixed list (e.g. "You've got this", "Stay calm", "One breath at a time").
-- **Files to modify/create:** A small list of messages and the component or logic that picks one and displays it at the right moment.
+- **Description:** Apply a soft, relaxing gradient background (e.g., soft blue to lavender) and adjust text/button colors for a calming feel.
+- **Files to modify/create:** `App.css`, possibly a new `Theme.css` or theme variables in existing CSS
+
+### Feature 3: Cycle Counter
+- **Assigned to:** Jesse
+- **Description:** Display "Breath 3 of 5" (or similar) and optionally total breaths completed during the session. Updates in real time as user cycles through breaths.
+- **Files to modify/create:** `App.jsx` (or main component), add state for cycle count and a small display section
+
+### Feature 4: Animated Breathing Circle
+- **Assigned to:** Parker
+- **Description:** Add an animated circle that expands during "Breathe in," holds during "Hold," and contracts during "Breathe out." Sync timing with the active breathing pattern.
+- **Files to modify/create:** New `BreathingCircle.jsx` component, `App.css` for animation keyframes
+
+### Feature 5: Duration Presets
+- **Assigned to:** Krista
+- **Description:** Add "Quick (30 sec)", "Standard (1 min)", and "Deep reset (2 min)" buttons. Selecting one sets how many breath cycles to run before auto-stopping (or showing a "Done" state).
+- **Files to modify/create:** `App.jsx`, add preset buttons and logic to limit total cycles based on selection
 
 ---
 
