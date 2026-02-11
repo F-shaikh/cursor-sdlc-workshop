@@ -6,11 +6,11 @@
 
 ## Project Overview
 
-**Project Name:** *[Give your project a name]*
+**Project Name:** Memory Card Match
 
-**One-line Description:** *[What does it do in one sentence?]*
+**One-line Description:** A web game where players flip cards to find matching pairs.
 
-**Type:** *[e.g., Chrome Extension, Web App, CLI Tool, etc.]*
+**Type:** Web App (React, frontend-only)
 
 ---
 
@@ -59,15 +59,12 @@
 
 > **Important:** Each team member MUST have their own task. Tasks should be independent features that can be built in parallel without stepping on each other's toes.
 
-
-| Name       | Task          | Description           |
-| ---------- | ------------- | --------------------- |
-| *[Name 1]* | *[Feature 1]* | *[Brief description]* |
-| *[Name 2]* | *[Feature 2]* | *[Brief description]* |
-| *[Name 3]* | *[Feature 3]* | *[Brief description]* |
-| *[Name 4]* | *[Feature 4]* | *[Brief description]* |
-| *[Name 5]* | *[Feature 5]* | *[Brief description]* |
-
+| Name | Task | Description |
+|------|------|-------------|
+| Maureen | Move Counter | Displays how many card flips the player has made |
+| Tina | Timer | Shows elapsed time since game start |
+| James | Win Animation | Confetti or celebration when all pairs are matched |
+| Pranathi | Restart Button | Button to shuffle and start a new game |
 
 ### Task Guidelines
 
@@ -83,12 +80,17 @@
 > **One person** creates the foundation that everyone else builds on.
 
 **What the MVP includes:**
-
-- *[Describe the minimal working version]*
+- 4×4 grid of face-down cards (8 pairs)
+- Click to flip two cards at a time
+- Match logic: matching pairs stay face-up; non-matches flip back after a short delay
+- Simple "You win!" message when all pairs are matched
+- Basic styling (cards, grid layout)
 
 **What it does NOT include:**
-
-- *[List features deliberately left out for team members to add]*
+- Move counter
+- Timer
+- Win animation/confetti
+- Restart button
 
 ---
 
@@ -96,35 +98,25 @@
 
 > These are the features team members will add. Design them to be **independent** so people can work in parallel.
 
-### Feature 1: *[Name]*
+### Feature 1: Move Counter
+- **Assigned to:** Maureen
+- **Description:** Display a count of how many moves (card flips) the player has made. Increment when two cards are flipped (whether they match or not).
+- **Files to modify/create:** `App.jsx` or main game component, `App.css` or styles for the counter display
 
-- **Assigned to:** *[Team member]*
-- **Description:** *[What it does]*
-- **Files to modify/create:** *[Be specific]*
+### Feature 2: Timer
+- **Assigned to:** Tina
+- **Description:** Show elapsed time in seconds (and optionally minutes) since the game started. Pause or stop when the player wins.
+- **Files to modify/create:** `App.jsx` or main game component, `App.css` for timer display
 
-### Feature 2: *[Name]*
+### Feature 3: Win Animation
+- **Assigned to:** James
+- **Description:** When all pairs are matched, trigger a celebration (confetti, animation, or visual effect) instead of or in addition to the "You win!" message.
+- **Files to modify/create:** `App.jsx` or main game component, possibly a confetti library (e.g., `canvas-confetti`) or custom CSS animation
 
-- **Assigned to:** *[Team member]*
-- **Description:** *[What it does]*
-- **Files to modify/create:** *[Be specific]*
-
-### Feature 3: *[Name]*
-
-- **Assigned to:** *[Team member]*
-- **Description:** *[What it does]*
-- **Files to modify/create:** *[Be specific]*
-
-### Feature 4: *[Name]*
-
-- **Assigned to:** *[Team member]*
-- **Description:** *[What it does]*
-- **Files to modify/create:** *[Be specific]*
-
-### Feature 5: *[Name]*
-
-- **Assigned to:** *[Team member]*
-- **Description:** *[What it does]*
-- **Files to modify/create:** *[Be specific]*
+### Feature 4: Restart Button
+- **Assigned to:** Pranathi
+- **Description:** Add a "New Game" or "Restart" button that reshuffles the cards and resets the game state so the player can play again.
+- **Files to modify/create:** `App.jsx` or main game component, `App.css` for button styling
 
 ---
 

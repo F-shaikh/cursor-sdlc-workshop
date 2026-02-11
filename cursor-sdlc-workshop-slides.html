@@ -39,7 +39,7 @@
             left: 0;
             height: 100vh;
             width: 100vw;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             padding: 60px;
@@ -50,6 +50,10 @@
         .slide-container:has(.slide.active) {
             z-index: 1;
             pointer-events: auto;
+        }
+
+        .slide-container.active {
+            display: flex;
         }
 
         .slide {
@@ -554,8 +558,8 @@
 <body>
     <div class="progress-bar" id="progress"></div>
 
-    <div class="slide-container">
     <!-- Slide 1: Title -->
+    <div class="slide-container active">
         <div class="slide active title-slide" data-slide="1">
             <h1>CURSOR SDLC WORKSHOP</h1>
             <p class="tagline">Experience the Software Development Lifecycle Firsthand</p>
@@ -1191,12 +1195,16 @@
 
         function showSlide(n) {
             const slides = document.querySelectorAll('.slide');
+            const containers = document.querySelectorAll('.slide-container');
             
-            if (n > totalSlides) currentSlide = 1;
-            if (n < 1) currentSlide = totalSlides;
+            currentSlide = n;
+            if (currentSlide > totalSlides) currentSlide = 1;
+            if (currentSlide < 1) currentSlide = totalSlides;
             
             slides.forEach(slide => slide.classList.remove('active'));
+            containers.forEach(container => container.classList.remove('active'));
             slides[currentSlide - 1].classList.add('active');
+            containers[currentSlide - 1].classList.add('active');
             
             document.getElementById('currentSlide').textContent = currentSlide;
             document.getElementById('prevBtn').disabled = currentSlide === 1;
