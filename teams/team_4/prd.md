@@ -6,11 +6,11 @@
 
 ## Project Overview
 
-**Project Name:** _[Give your project a name]_
+**Project Name:** Call Calm
 
-**One-line Description:** _[What does it do in one sentence?]_
+**One-line Description:** A simple web app that guides account executives through breathing exercises before or during stressful sales calls.
 
-**Type:** _[e.g., Chrome Extension, Web App, CLI Tool, etc.]_
+**Type:** Web App (single page)
 
 ---
 
@@ -54,11 +54,11 @@
 
 | Name | Task | Description |
 |------|------|-------------|
-| _[Name 1]_ | _[Feature 1]_ | _[Brief description]_ |
-| _[Name 2]_ | _[Feature 2]_ | _[Brief description]_ |
-| _[Name 3]_ | _[Feature 3]_ | _[Brief description]_ |
-| _[Name 4]_ | _[Feature 4]_ | _[Brief description]_ |
-| _[Name 5]_ | _[Feature 5]_ | _[Brief description]_ |
+| Parker | Phase label | Text showing "Breathe in" / "Hold" / "Breathe out" for current step |
+| Jesse | Breathing circle animation | Visual circle that grows on inhale and shrinks on exhale |
+| Brookey | Duration presets | Buttons to choose 1 min, 3 min, or 5 min session length |
+| Krista | Calm color theme | Soothing color palette (e.g. soft blue/green) for the app |
+| Pete | Encouraging messages | Short calm phrase shown between cycles ("You've got this", etc.) |
 
 ### Task Guidelines
 - Each task should add something **visible** to the project
@@ -73,10 +73,17 @@
 > **One person** creates the foundation that everyone else builds on.
 
 **What the MVP includes:**
-- _[Describe the minimal working version]_
+- Single page with one breathing cycle: Inhale (4s) → Hold (4s) → Exhale (4s)
+- A Start button that runs the cycle once
+- Simple countdown or step indicator (e.g. "4, 3, 2, 1" per phase)
+- Minimal styling so the page runs and the cycle is visible
 
 **What it does NOT include:**
-- _[List features deliberately left out for team members to add]_
+- Phase label text (Parker)
+- Animated breathing circle (Jesse)
+- Duration presets 1/3/5 min (Brookey)
+- Calm color theme (Krista)
+- Encouraging messages between cycles (Pete)
 
 ---
 
@@ -84,30 +91,30 @@
 
 > These are the features team members will add. Design them to be **independent** so people can work in parallel.
 
-### Feature 1: _[Name]_
-- **Assigned to:** _[Team member]_
-- **Description:** _[What it does]_
-- **Files to modify/create:** _[Be specific]_
+### Feature 1: Phase label
+- **Assigned to:** Parker
+- **Description:** Display clear text for the current phase: "Breathe in", "Hold", or "Breathe out" (and optionally the countdown number).
+- **Files to modify/create:** Main app/component that renders the cycle; add or update the element that shows phase text.
 
-### Feature 2: _[Name]_
-- **Assigned to:** _[Team member]_
-- **Description:** _[What it does]_
-- **Files to modify/create:** _[Be specific]_
+### Feature 2: Breathing circle animation
+- **Assigned to:** Jesse
+- **Description:** A circle (or shape) that smoothly grows during inhale and shrinks during exhale, synced to the timer.
+- **Files to modify/create:** Add a visual component (e.g. div/canvas/SVG) and CSS or JS animation tied to the current phase and countdown.
 
-### Feature 3: _[Name]_
-- **Assigned to:** _[Team member]_
-- **Description:** _[What it does]_
-- **Files to modify/create:** _[Be specific]_
+### Feature 3: Duration presets
+- **Assigned to:** Brookey
+- **Description:** Buttons or controls to choose session length: 1 min, 3 min, or 5 min (number of cycles computed from cycle length).
+- **Files to modify/create:** UI for preset selection; wire selection into the timer/session logic so the app stops after the chosen duration.
 
-### Feature 4: _[Name]_
-- **Assigned to:** _[Team member]_
-- **Description:** _[What it does]_
-- **Files to modify/create:** _[Be specific]_
+### Feature 4: Calm color theme
+- **Assigned to:** Krista
+- **Description:** Apply a soothing color palette (e.g. soft blue, green, or neutral) to background, text, and key elements so the app feels calm during a call.
+- **Files to modify/create:** CSS/theme file or style section; update class names or variables used by the main layout and components.
 
-### Feature 5: _[Name]_
-- **Assigned to:** _[Team member]_
-- **Description:** _[What it does]_
-- **Files to modify/create:** _[Be specific]_
+### Feature 5: Encouraging messages
+- **Assigned to:** Pete
+- **Description:** Between cycles (or at the start of each new cycle), show a short encouraging phrase from a fixed list (e.g. "You've got this", "Stay calm", "One breath at a time").
+- **Files to modify/create:** A small list of messages and the component or logic that picks one and displays it at the right moment.
 
 ---
 
